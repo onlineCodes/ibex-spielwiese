@@ -1,8 +1,3 @@
-# ibex-spielwiese
-Quellcode zum gemeinschaftlichen programmieren von Kursinhalten.
-
-[Notizen dazu](http://wiki.itbs.selfhost.co/doku.php?id=ibex:kursinhalte:spielwiese:start)
-
 # General Infos
 
 Wenn ihr das Projekt Video nicht abspielen könnt, installiert
@@ -29,12 +24,11 @@ sicher bist, dasss du den generierten Code verstanden hast.
 
 ## TO-DO
 
-- [x] Erstelle ein GitHub Repo
-- [x] Erstelle einen Netlify Account
-- [x] Connecte GitHub Repo mit Netlify https://github.com/onlineCodes/ibex-spielwiese https://relaxed-otter-9ccf40.netlify.app
-- [ ] Connecte GitHub Repo mit Netlify https://github.com/itbsStefan/solid-netlify
-- [1] Nutze Vite für deine App
-- [*] Commite deine Entwicklungsschritte
+- [ ] Erstelle ein GitHub Repo
+- [ ] Erstelle einen Netlify Account
+- [ ] Connecte GitHub Repo mit Netlify
+- [ ] Nutze Vite für deine App
+- [ ] Commite deine Entwicklungsschritte
 - [ ] Erstelle das Webdesign
 - [ ] Mache das Webdesign responsiv
 - [ ] Implementiere die JavaScript Funktionalität
