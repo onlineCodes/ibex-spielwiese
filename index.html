@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <link rel="stylesheet" href="style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script type="module" src="/main.js" defer></script>
+        <script
+            src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"
+            defer
+        ></script>
+        <title>countries app</title>
+    </head>
+    <body>
+        <header>
+            <header-wrapper>
+                <left-side>
+                    <h1>Where in the World</h1>
+                </left-side>
+
+                <right-side>
+                    <label class="switch">
+                        <input type="checkbox" id="toggleSwitch" checked />
+                        <span class="slider round"></span>
+                    </label>
+                    <p>Dark Mode</p>
+                </right-side>
+            </header-wrapper>
+        </header>
+        <main>
+            <countries-section>
+                <search-and-filter>
+                    <left-side>
+                        <iconify-icon icon="clarity:search-line"></iconify-icon>
+                        <input
+                            type="search"
+                            name="search"
+                            id="search"
+                            placeholder="Search for a country . . ."
+                        />
+                    </left-side>
+
+                    <right-side>
+                        <select name="filter" id="filter">
+                            <option value="">Filter by Region</option>
+                            <!-- Render Options With JS -->
+                        </select>
+                    </right-side>
+                </search-and-filter>
+
+                <countries-wrapper>
+                    <!-- Render Countries With JS -->
+                </countries-wrapper>
+            </countries-section>
+        </main>
+    </body>
+</html>
