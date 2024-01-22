@@ -1,5 +1,9 @@
 // @ts-nocheck
 export const UI = {
+    renderlabel: (htmlElement,txt = "") => {
+        const labelcount  = document.getElementById('anzahl');
+        labelcount.innerHTML += txt;
+    },
     renderRegionOptions: (htmlElement) => {
         const continents = [...new Set(window.countries.map((country) => (country = country.region)))];
 
@@ -13,6 +17,9 @@ export const UI = {
         }
     },
     renderCountries: (filteredCountries) => {
+        const labelcount  = document.getElementById('anzahl');
+        labelcount.innerHTML = filteredCountries.length
+
         const countriesWrapper = document.querySelector('countries-wrapper');
         countriesWrapper.innerHTML = '';
 

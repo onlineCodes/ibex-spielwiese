@@ -6,12 +6,22 @@ import { UI } from './src/services/UI';
 window.addEventListener('DOMContentLoaded', async () => {
     const searchInput = document.getElementById('search');
     const selectInput = document.getElementById('filter');
+    const labelcount  = document.getElementById('anzahl');
+    let runfirst = true;
 
     await API.getCountriesData();
 
     UI.renderRegionOptions(selectInput);
-    UI.renderCountries(window.countries);
-
+    if(runfirst) {
+        searchInput.value = "cam";
+        UI.renderCountries([...window.countries].filter((country) => country.name.common.toLowerCase().includes(searchInput.value)));
+        //UI.renderCountries(window.countries);
+        runfirst = false;
+        UI.renderlabel(labelcount," Stefan");
+    } else {
+        UI.renderCountries(window.countries);
+    }
+  
     searchInput.addEventListener('input', (event) => {
         const searchTerm = event.target.value.toLowerCase();
         const filteredCountries = [...window.countries].filter((country) =>
@@ -29,6 +39,7 @@ window.addEventListener('DOMContentLoaded', async () => {
 
         UI.renderCountries(filteredCountries);
     });
+    UI.renderlabel(labelcount," test");
 });
 
 
