@@ -1,3 +1,8 @@
+# ibex-spielwiese
+Quellcode zum gemeinschaftlichen programmieren von Kursinhalten.
+
+[Notizen dazu](http://wiki.itbs.selfhost.co/doku.php?id=ibex:kursinhalte:spielwiese:start)
+
 # General Infos
 
 Wenn ihr das Projekt Video nicht abspielen könnt, installiert
@@ -24,19 +29,28 @@ sicher bist, dasss du den generierten Code verstanden hast.
 
 ## TO-DO
 
-- [ ] Erstelle ein GitHub Repo
-- [ ] Erstelle einen Netlify Account
-- [ ] Connecte GitHub Repo mit Netlify
-- [ ] Nutze Vite für deine App
-- [ ] Commite deine Entwicklungsschritte
-- [ ] Erstelle das Webdesign
-- [ ] Mache das Webdesign responsiv
-- [ ] Implementiere die JavaScript Funktionalität
-- [ ] Nutze JS Modules
+- [x] Erstelle ein GitHub Repo
+- [x] Erstelle einen Netlify Account
+- [x] Connecte GitHub Repo mit Netlify https://github.com/onlineCodes/ibex-spielwiese https://relaxed-otter-9ccf40.netlify.app
+- [ ] Connecte GitHub Repo mit Netlify https://github.com/itbsStefan/solid-netlify
+- [1] Nutze Vite für deine App
+- [*] Commite deine Entwicklungsschritte
+- [x] Deploy deine App auf Netlify Referenzcode
+- [ ] Deploy deine App auf Netlify main Branch
+- [ ] Commite deine Entwicklungsschritte benutze git commit -m "funktioniert ;-)"
+  - [ ] Erstelle das Webdesign
+  - [ ] Mache das Webdesign responsiv
+  - [ ] Implementiere die JavaScript Funktionalität
+  - [ ] Nutze JS Modules
+  - [ ] Implementiere den Color-Mode Switcher (Html-Tag Data Attribute)
+  - [ ] Implementiere einen Loading Spinner Indicator
+  - [ ] Verbinde Such- & Filter-Funktion
+  - [ ] Implementiere eine "Load More" & "Load Less" Funktion
+  - [ ] Implementiere eine Country-Detail Seite
+  - [ ] Lagere deine Funktionen aus (z.B. Objects)
 - [ ] Lagere ein Object oder Functions aus
-- [ ] Deploy deine App auf Netlify
-
-
+- [ ] BONUS: Implementiere eine Zeitzonen Live-Uhr
+ 
 ## Server Infos
 
 + Vite App Command: "npm create vite@latest"
@@ -67,6 +81,10 @@ sicher bist, dasss du den generierten Code verstanden hast.
 
 
 ## Nützliche Links
++ https://cssloaders.github.io/
++ https://developers.google.com/maps/documentation/javascript?hl=de
++ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl?retiredLocale=de
++ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/UTC
 + https://restcountries.com/
 + https://www.w3schools.com/howto/howto_css_switch.asp
 + https://de.vitejs.dev/
