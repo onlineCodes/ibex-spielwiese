@@ -126,7 +126,7 @@ countries-section {
     align-items: center;
 
     & search-and-filter {
-        width: 80%;
+        width: 90%;
         display: flex;
         justify-content: space-between;
         margin: 2rem 3;
@@ -142,6 +142,11 @@ countries-section {
             display: flex;
             align-items: center;
             width: 25%;
+            padding: 0.5rem 1rem;
+
+            @media (width < 450px) {
+                width: 100%;
+            }
 
             & iconify-icon {
                 position: absolute;
@@ -176,26 +181,30 @@ countries-section {
         }
 
         & right-side {
+            width: 25%;
+            padding: 0.5rem 1rem;
+            margin: auto;
             & select {
+                margin: auto; /* muss anders ist nicht in der Mitte*/
+                padding: 8px;
                 height: 35px;
-                width: 25%;
-                padding: 0.5rem 1rem;
                 border-radius: 10px;
                 background-color: #3b3b3b;
                 font-size: 1rem;
                 border: none;
                 color: rgb(169, 167, 167);
 
-                @media (width < 450px) {
-                    width: 100%;
-                }
-
                 &:focus-visible {
                     border: 1px solid grey;
                     outline: none;
                 }
             }
-        }
+                
+            @media (width < 450px) {
+                min-width: 100px;
+                width: 100%;
+            }
+    }
     }
 
     & countries-wrapper {
