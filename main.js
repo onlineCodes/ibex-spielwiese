@@ -7,20 +7,16 @@ window.addEventListener('DOMContentLoaded', async () => {
     const searchInput = document.getElementById('search');
     const selectInput = document.getElementById('filter');
     const labelcount  = document.getElementById('anzahl');
-    let runfirst = true;
+    searchInput.value = "h";
+    //UI.renderlabel(labelcount,"Stefan");
 
     await API.getCountriesData();
-
     UI.renderRegionOptions(selectInput);
-    if(runfirst) {
-        searchInput.value = "cam";
-        UI.renderCountries([...window.countries].filter((country) => country.name.common.toLowerCase().includes(searchInput.value)));
-        //UI.renderCountries(window.countries);
-        runfirst = false;
-        UI.renderlabel(labelcount," Stefan");
-    } else {
-        UI.renderCountries(window.countries);
-    }
+
+    //UI.renderCountries(window.countries);
+    UI.renderCountries([...window.countries].filter((country) => country.name.common.toLowerCase().includes(searchInput.value)));
+    const uniCodePoint = 0x1F308;
+    UI.renderlabel(labelcount," first run " + String.fromCodePoint(uniCodePoint));
   
     searchInput.addEventListener('input', (event) => {
         const searchTerm = event.target.value.toLowerCase();
@@ -29,6 +25,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         );
 
         UI.renderCountries(filteredCountries);
+        //console.log(filteredCountries); debugger;
     });
 
     selectInput.addEventListener('change', (event) => {
@@ -39,7 +36,7 @@ window.addEventListener('DOMContentLoaded', async () => {
 
         UI.renderCountries(filteredCountries);
     });
-    UI.renderlabel(labelcount," test");
+    UI.renderlabel(labelcount,` ${searchInput.value} _`);
 });
 
 

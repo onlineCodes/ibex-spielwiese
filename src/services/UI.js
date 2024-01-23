@@ -18,7 +18,9 @@ export const UI = {
     },
     renderCountries: (filteredCountries) => {
         const labelcount  = document.getElementById('anzahl');
-        labelcount.innerHTML = filteredCountries.length
+        labelcount.innerHTML = "_";
+        UI.renderlabel(labelcount,filteredCountries.length)
+//        labelcount.innerHTML = filteredCountries.length
 
         const countriesWrapper = document.querySelector('countries-wrapper');
         countriesWrapper.innerHTML = '';
