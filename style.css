@@ -65,6 +65,7 @@ header {
         & right-side {
             display: flex;
             align-items: center;
+            width: 25%;
             gap: 1rem;
 
             & .switch {
@@ -125,10 +126,11 @@ countries-section {
     align-items: center;
 
     & search-and-filter {
-        width: 90%;
+        width: 80%;
         display: flex;
         justify-content: space-between;
-        margin: 2rem 0;
+        margin: 2rem 3;
+        padding: 15px;
 
         @media (width < 450px) {
             flex-direction: column;
@@ -139,6 +141,7 @@ countries-section {
         & left-side {
             display: flex;
             align-items: center;
+            width: 250px;
 
             & iconify-icon {
                 position: absolute;
@@ -162,10 +165,20 @@ countries-section {
             }
         }
 
+        #anzahl{
+            width:50%;
+            background-color: blue;
+            text-align: center;
+            padding: 3px;
+            margin:auto;
+            color: yellow;
+            font-weight: bolder;
+        }
+
         & right-side {
             & select {
                 height: 35px;
-                width: 100%;
+                width: 250px;
                 padding: 0.5rem 1rem;
                 border-radius: 10px;
                 background-color: #3b3b3b;
