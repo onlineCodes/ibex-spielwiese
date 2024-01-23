@@ -165,7 +165,7 @@ countries-section {
         & right-side {
             & select {
                 height: 35px;
-                width: 300px;
+                width: 100%;
                 padding: 0.5rem 1rem;
                 border-radius: 10px;
                 background-color: #3b3b3b;
