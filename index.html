@@ -3,24 +3,48 @@
     <head>
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-        <link rel="stylesheet" href="style.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script type="module" src="/main.js" defer></script>
+        <title>Stefan Spielwiese mit Tailwind</title>
         <script
             src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"
             defer
         ></script>
-        <title>Stefan Spielwiese</title>
+
+<!--         <link rel="stylesheet" href="style.css" />  -->
+<script src="https://cdn.tailwindcss.com" >let dark=true;</script>
     </head>
-    <body>
+
+    <script>
+        /** @type {import('tailwindcss').Config} */
+        module.exports = {
+            darkMode: 'class',
+            // ...
+        }
+    </script>
+    <style>
+    h1 {
+        color: brown;
+    }
+
+    </style>
+
+    <body class="dark:bg-gray-900">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root_tailwind">
+
+    <h1 class="text-3xl font-bold underline">
+        Hallo Welt!
+    </h1>
+
         <header>
             <header-wrapper>
                 <left-side>
-                    <h1>Where in the World</h1>
+                    <h1 class="text-3xl font-bold dark:text-gray-400">Where in the World</h1>
                 </left-side>
 
                 <right-side>
-                    <label class="switch">
+                    <label class="switch text flex-row justify-between">
                         <input type="checkbox" id="toggleSwitch" checked />
                         <span class="slider round"></span>
                     </label>
@@ -40,8 +64,8 @@
                             placeholder="Search for a country . . ."
                         />
                     </left-side>
-<p id="anzahl"></p>
-                    <right-side>
+<p id="anzahl" class="rounded-lg font-mono"></p>
+                    <right-side class="flex flex-row justify-between ">
                         <select name="filter" id="filter">
                             <option value="">Filter by Region</option>
                             <!-- Render Options With JS -->
@@ -54,5 +78,6 @@
                 </countries-wrapper>
             </countries-section>
         </main>
+    </div> <!--/*div id="root_tailwind-->
     </body>
 </html>

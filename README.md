@@ -3,6 +3,10 @@ Quellcode zum gemeinschaftlichen programmieren von Kursinhalten.
 
 [Notizen dazu](http://wiki.itbs.selfhost.co/doku.php?id=ibex:kursinhalte:spielwiese:start)
 
+https://github.com/itbsStefan/ibexCode.git ohne TailwindCSS
+
+Branch mit Tailwind: appTailwindCSS
+
 # General Infos
 
 Wenn ihr das Projekt Video nicht abspielen könnt, installiert
