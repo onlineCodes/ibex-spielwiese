@@ -15,30 +15,30 @@
 <script src="https://cdn.tailwindcss.com" >let dark=true;</script>
     </head>
 
-    <script>
+    <!-- <script>
         /** @type {import('tailwindcss').Config} */
         module.exports = {
             darkMode: 'class',
             // ...
         }
-    </script>
+    </script> -->
     <style>
-    h1 {
+    #root_tailwind{
+        background-color: rgb(89, 229, 135);
+    }
+    h5, #rot_tailwind {
         color: brown;
+        font-size: 1.5em;
     }
 
     </style>
 
     <body class="dark:bg-gray-900">
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root_tailwind">
+    <div id="root_tailwind" >
 
-    <h1 class="text-3xl font-bold underline">
-        Hallo Welt!
-    </h1>
-
-        <header>
-            <header-wrapper>
+        <header class="bg-gray-500">
+            <header-wrapper class="flex justify-around flex-row">
                 <left-side>
                     <h1 class="text-3xl font-bold dark:text-gray-400">Where in the World</h1>
                 </left-side>
@@ -48,36 +48,42 @@
                         <input type="checkbox" id="toggleSwitch" checked />
                         <span class="slider round"></span>
                     </label>
-                    <p>Dark Mode</p>
+                    <p class="just">Dark Mode</p>
                 </right-side>
             </header-wrapper>
         </header>
-        <main>
-            <countries-section>
-                <search-and-filter>
-                    <left-side>
+        <hr class="h-3 "/>
+        <main class="bg-gray-400 px-3">
+            <countries-section class="w-1/2">
+                <search-and-filter class="flex justify-around  flex-row">
+                    <left-side class="w-1/4 min-w-20" >
                         <iconify-icon icon="clarity:search-line"></iconify-icon>
                         <input
+                            
                             type="search"
                             name="search"
                             id="search"
                             placeholder="Search for a country . . ."
                         />
                     </left-side>
-<p id="anzahl" class="rounded-lg font-mono"></p>
-                    <right-side class="flex flex-row justify-between ">
-                        <select name="filter" id="filter">
+<p id="anzahl" class="w-1/2 decoration-20 rounded-lg font-mono bg-gray-300 p-2 self-center  hover:bg-sky-700 ">test</p>
+                    <right-side class="w-1/4 min-w-20">
+                        <select 
+                           
+                            name="filter" id="filter">
                             <option value="">Filter by Region</option>
                             <!-- Render Options With JS -->
                         </select>
                     </right-side>
                 </search-and-filter>
-
+                <hr class="h-3 "/>
                 <countries-wrapper>
                     <!-- Render Countries With JS -->
                 </countries-wrapper>
             </countries-section>
         </main>
+
+
     </div> <!--/*div id="root_tailwind-->
     </body>
 </html>
