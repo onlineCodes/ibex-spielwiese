@@ -1,0 +1,32 @@
+/* @import "tailwindcss/base"; läd alles vielleicht ohne Optimierung */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* es wir weiterhin classic syle.css in index.html eingebunden */ 
+
+@layer base {
+/* normle html Tags und IDs sylen */
+    h3:hover {
+        border: 2rem solid chartreuse ;
+    }
+    h3{
+        border:  2rem dotted;
+    }
+
+}
+
+@layer components {
+/* zusammenfassen von atomic Tailwind class zu eigenen class Name */
+    .btn-mein-style {
+        /* @apply 'py-2 px-5 m-3 hover:bg-blue-700 text-white'; */
+        background-color: chocolate;
+    }
+}
+
+@layer utilities {
+/* zusätzliche eigene atomic Hilfsklassen als eigene Tailwind  Erweiterung schreiben */
+    .filter-name {
+        filter: grayscale(100%);
+    }
+}

@@ -5,14 +5,17 @@
         <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script type="module" src="/main.js" defer></script>
-        <title>Stefan Spielwiese mit Tailwind</title>
+        <title>Tailwind Spielwiese</title>
         <script
             src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"
             defer
         ></script>
 
-<!--         <link rel="stylesheet" href="style.css" />  -->
-<script src="https://cdn.tailwindcss.com" >let dark=true;</script>
+<link rel="stylesheet" href="style.css" /> 
+<!-- <script src="https://cdn.tailwindcss.com" > </script> -->
+<link rel="stylesheet" href="tailwind-index.css" />    
+
+<!-- <link rel="stylesheet" href="https://rsms.me/inter/inter.css"> -->
     </head>
 
     <!-- <script>
@@ -24,11 +27,14 @@
     </script> -->
     <style>
     #root_tailwind{
-        background-color: rgb(89, 229, 135);
+        background-color: rgb(142, 141, 158);
     }
-    h5, #rot_tailwind {
-        color: brown;
+    h3, #root_tailwind {
+        /* color: rgb(30, 116, 78); */
         font-size: 1.5em;
+    }
+    .xtest {
+        color: rgba(196, 20, 175, 0.87);
     }
 
     </style>
@@ -36,6 +42,7 @@
     <body class="dark:bg-gray-900">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root_tailwind" >
+        <h3 class="xtest" >Tailwind Syles</h3>
 
         <header class="bg-gray-500">
             <header-wrapper class="flex justify-around flex-row">
@@ -77,7 +84,17 @@
                     </right-side>
                 </search-and-filter>
                 <hr class="h-3 "/>
-                <countries-wrapper>
+<countries-wrapper class="xml grid grid-col-1 md:grid-col-6 lg:grid-col-3 gap-2">
+<countries-wrapper class="neu grid grid-col-1 md:grid-col-6 lg:grid-col-3 gap-2">
+<countries-wrapper class="neu grid grid-col-1 md:grid-col-6 lg:grid-col-3 gap-2">
+<countries-wrapper class="neu grid grid-col-1 md:grid-col-6 lg:grid-col-3 gap-2">
+<countries-wrapper class="neu grid grid-col-1 md:grid-col-6 lg:grid-col-3 gap-2">
+<countries-wrapper class="neu grid grid-col-1 md:grid-col-6 lg:grid-col-3 gap-2">
+                    
+                    <template id="vcountries">
+                        
+                    </template>
+
                     <!-- Render Countries With JS -->
                 </countries-wrapper>
             </countries-section>
